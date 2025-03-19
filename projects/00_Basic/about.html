@@ -11,7 +11,10 @@
     <header>
         <h1>About me</h1>
         <p>I'm Kota Miyasaka.</p>
-        <img src="icon.png" alt="プロフィール写真">
+        <img src="icon.png" alt="プロフィール写真" class="icon">
+        <div class="lightbox">
+            <img src="icon.png" alt="拡大写真" class="lightbox-icon">
+        </div>
     </header>
 
     <section class="profile">
@@ -24,13 +27,34 @@
     <section class="skills">
         <h2>スキルセット</h2>
         <ul>
-            <li>C言語：2年，おもにゲーム開発で使用</li>
-            <li>SDL2：2年，同上</li>
-            <li>C++：半年，研究（画像工学）で使用</li>
-            <li>Python：かじった程度</li>
-            <li>flask：〃</li>
-            <li>HTML/CSS：〃</li>
-            <li>JavaScript：〃</li>
+            <li>
+            <label for="C">C言語：</label>
+            <div class="progress-bar" data-value="90"></div>
+            </li>
+            <li>
+            <label for="SDL2">SDL2：</label>
+            <div class="progress-bar" data-value="80"></div>
+            </li>
+            <li>
+            <label for="CPP">C++：</label>
+            <div class="progress-bar" data-value="70"></div>
+            </li>
+            <li>
+            <label for="Py">Python：</label>
+            <div class="progress-bar" data-value="50"></div>
+            </li>
+            <li>
+            <label for="flask">flask：</label>
+            <div class="progress-bar" data-value="40"></div>
+            </li>
+            <li>
+            <label for="html-css">HTML/CSS：</label>
+            <div class="progress-bar" data-value="50"></div>
+            </li>
+            <li>
+            <label for="JS">JavaScript：</label>
+            <div class="progress-bar" data-value="30"></div>
+            </li>
         </ul>
     </section>
 
@@ -51,5 +75,6 @@
         <p>最終更新日：2025年3月18日</p>
     </footer>
 
+    <script src="script_about.js"></script>
 </body>
 </html>

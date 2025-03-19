@@ -61,3 +61,48 @@ li {
     margin: 20px;
     padding: 20px;
 }
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #faff62;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+.icon {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.05);
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-icon {
+    max-width: 75%;
+    max-height: 75%;
+    border: 3px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
