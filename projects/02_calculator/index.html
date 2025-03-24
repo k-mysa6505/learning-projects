@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>電卓</h1>
+        </header>
+
+        <div class="calculator-controler">
+            <div class="formula">
+                <div class="expression-display"></div>
+                <div class="current-input"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">%</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">CE</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">C</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">←</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">1/x</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">x^2</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">√x</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">÷</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">1</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">2</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">3</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">×</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">4</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">5</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">6</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">-</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">7</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">8</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">9</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-operator">+</button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">+/-</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">0</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-number">.</button></div>
+                <div class="col-xs-3"><button class="btn btn-calc btn-equal">=</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
