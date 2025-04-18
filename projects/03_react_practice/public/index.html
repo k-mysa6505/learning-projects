@@ -23,23 +23,42 @@
     <script type="text/babel">
       let dom = document.querySelector("#root");
 
-      const list = {
-        listStyleType: "none",
-        padding: 0,
-        margin: 0,
-      };
+      const dfn = {
+        footSize: "20px",
+        padding: "10px",
+      }
+      const dt = {
+        footSize: "16px",
+        color: 'white',
+        backgroundColor: '#006',
+        padding: "10px",
+      }
+      const dd = {
+        color: 'black',
+        padding: '10px',
+      }
 
-      const data = [
-        <li>One</li>,
-        <li>Two</li>,
-        <li>Three</li>,
-      ];
+      let data = {
+        url: 'http://google.com',
+        title: 'Google',
+        caption: 'Google Search',
+      }
 
       let el = (
         <div>
-          <ul style={list}>
-            {data}
-          </ul>
+          {(() =>
+            <dl>
+              <dt style={dt}><dfn style={dfn}>
+                {data.title}
+              </dfn></dt>
+              <dd style={dd}>
+                {data.caption}
+              </dd>
+              <dd style={dd}>
+                <a href={data.url}>※{data.title}に移動</a>
+              </dd>
+            </dl>
+          )()}
         </div>
       );
 
