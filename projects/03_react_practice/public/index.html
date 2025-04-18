@@ -23,42 +23,43 @@
     <script type="text/babel">
       let dom = document.querySelector("#root");
 
-      const dfn = {
-        footSize: "20px",
-        padding: "10px",
-      }
-      const dt = {
-        footSize: "16px",
-        color: 'white',
-        backgroundColor: '#006',
-        padding: "10px",
-      }
-      const dd = {
-        color: 'black',
-        padding: '10px',
-      }
+      class Rect extends React.Component {
+        x = 0;
+        y = 0;
+        width = 0;
+        height = 0;
+        color = "white";
+        opacity = 0;
+        style = {};
 
-      let data = {
-        url: 'http://google.com',
-        title: 'Google',
-        caption: 'Google Search',
+        constructor(props) {
+          super(props);
+          this.x = props.x;
+          this.y = props.y;
+          this.width = props.w;
+          this.height = props.h;
+          this.color = props.c;
+          this.opacity = props.o;
+          this.style = {
+            backgroundColor: this.color,
+            opacity: this.opacity,
+            position: "absolute",
+            left: this.x + "px",
+            top: this.y + "px",
+            width: this.width + "px",
+            height: this.height + "px",
+          }
+        }
+
+        render() {
+          return <div style={this.style}></div>;
+        }
       }
 
       let el = (
         <div>
-          {(() =>
-            <dl>
-              <dt style={dt}><dfn style={dfn}>
-                {data.title}
-              </dfn></dt>
-              <dd style={dd}>
-                {data.caption}
-              </dd>
-              <dd style={dd}>
-                <a href={data.url}>※{data.title}に移動</a>
-              </dd>
-            </dl>
-          )()}
+          <Rect x="100" y="100" w="100" h="100" c="cyan" o="0.7" />
+          <Rect x="150" y="150" w="100" h="100" c="magenta" o="0.6" />
         </div>
       );
 
