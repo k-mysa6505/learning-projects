@@ -1,0 +1,44 @@
+# Core Flask framework
+Flask==3.0.0
+
+# Database and ORM
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.5
+
+# Authentication and Security
+Flask-Login==0.6.3
+Flask-WTF==1.2.1
+Werkzeug==3.0.1
+Flask-Bcrypt==1.0.1
+
+# Forms and Validation
+WTForms==3.1.1
+
+# Environment Management
+python-dotenv==1.0.0
+
+# Email Support (optional for blog features)
+Flask-Mail==0.9.1
+
+# Template and UI Enhancement
+Flask-Moment==1.0.5
+Flask-Bootstrap4==4.0.2
+
+# Rich Text Editor (for blog posts)
+Flask-CKEditor==0.4.6
+
+# Development and Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+Flask-Testing==0.8.1
+
+# Code Quality
+black==23.11.0
+flake8==6.1.0
+
+# Production Server
+gunicorn==21.2.0
+
+# Additional Utilities
+Pillow==10.1.0
+click==8.1.7
